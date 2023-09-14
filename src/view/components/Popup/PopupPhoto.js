@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import PhotoList from "../PhotoList/PhotoList";
 import PhotoDetailCard from "../PhotoDetail/PhotoDetailCard";
 import Tags from "../Tags";
 import PhotoCollectionsList from "../PhotoCollections/PhotoCollectionsList";
@@ -11,7 +10,6 @@ const PopupPhoto = ({singlePhoto, onClose}) => {
         urls,
         tags,
         related_collections,
-        related_photos,
         user
     } = singlePhoto
 
@@ -21,7 +19,6 @@ const PopupPhoto = ({singlePhoto, onClose}) => {
         <Container>
             <Contents onClick={(e) => e.stopPropagation()}>
                 <PhotoDetailCard user={user} urls={urls} onClose={onClose}/>
-                {/*<PhotoList photos={related_photos.results}/>*/}
                 <PhotoCollectionsList data={related_collections.results}/>
                 <Tags tags={tags}/>
             </Contents>
