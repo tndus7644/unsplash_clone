@@ -29,7 +29,7 @@ const request = async (contentType, method, url, data) => {
         if (method === FetchConsts.GET) {
             config.params = {
                 ...data,
-                client_id: 'J1rWV_qJ98sOC9-M2D-jQlO51-dBMPPH54Ae9Blne0c'
+                client_id: '4vDIsjcvs2WOILjBzhvvOIx6MZ0QV5hMrYsRXLTNDkg'
             }
 
         } else {

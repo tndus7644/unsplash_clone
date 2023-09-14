@@ -13,6 +13,8 @@ const PhotoCard = (props) => {
         id
     } = props
 
+
+
     return (
         <Container onClick={() => onClickPhoto(id)}>
             <Thumb>

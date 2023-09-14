@@ -8,7 +8,7 @@ const Visual = () => {
 
     return (
         <Container>
-            <Overlay alpha={0.4}/>
+            <Overlay/>
             <Content>
                 <h1>Unsplash</h1>
                 <h2>

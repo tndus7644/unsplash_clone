@@ -38,14 +38,11 @@ const saga = function* () {
                 photoPopup:true,
             }))
             const photoByIdResult = yield call(API.getPhotoById, id);
-            const getPhotoRelated = yield call(API.getPhotoRelated, id);
             console.log('[saga getPhotoById]', photoByIdResult)
-            console.log('[saga getPhotoRelated]', getPhotoRelated)
             if(photoByIdResult){
                 yield put(Action.Creators.updateState({
                     singlePhoto:{
                         ...photoByIdResult,
-                        related_photos: getPhotoRelated
                     }
                 }))
             }

@@ -21,7 +21,7 @@ const PopupPhoto = ({singlePhoto, onClose}) => {
         <Container>
             <Contents onClick={(e) => e.stopPropagation()}>
                 <PhotoDetailCard user={user} urls={urls} onClose={onClose}/>
-                <PhotoList photos={related_photos.results}/>
+                {/*<PhotoList photos={related_photos.results}/>*/}
                 <PhotoCollectionsList data={related_collections.results}/>
                 <Tags tags={tags}/>
             </Contents>

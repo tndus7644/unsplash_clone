@@ -14,15 +14,11 @@ const SearchPhotoContainer = () => {
     const {searchResult} = useSelector(state => state.search);
 
     useEffect(() => {
-        searchPhoto();
-    }, [query])
-
-    const searchPhoto = () => {
         SearchActions.searchPhoto({
             per_page:20,
             query
         })
-    }
+    }, [query])
 
 
     return (

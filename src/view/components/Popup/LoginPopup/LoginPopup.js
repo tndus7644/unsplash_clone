@@ -19,7 +19,7 @@ const LoginPopup = () => {
 
     return (
         <Container className={cn({show:popup})}>
-            <Overlay onClick={closePopup} className={"overlay"} alpha={0.4}/>
+            <Overlay onClick={closePopup} className={"overlay"}/>
             <Content>
                 <ContentContainer>
                     <LoginContent>
